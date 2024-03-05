@@ -1,0 +1,82 @@
+<html>
+    <head><title>đối tuong</title></head>
+    <div style="background-color: aquamarine;color: blue;"
+    ">
+
+    </div>
+    <body>
+        <h1>Object JavaScript</h1>
+        <p id="demo2"></p>
+    <script>
+        //create an object
+        const car = {type:"Fiat",model:"400",color:"white"};
+        //display some data from object
+        document.getElementById("demo2").innerHTML = 
+        "the car type is " + car.type +"<br>"    + "the car color is " + car.color;
+    </script>
+
+
+    </body>
+</html>
+##########################3
+<html>
+    <body>
+        <h1>tao doi tuong theo nghia den</h1>
+        <p id="demo1"></p>
+    <script>
+        const nguoi ={firstname:"Thanh",lastname:"Long",age:"24",country:"Viet Nam "}
+        document.getElementById("demo1").innerHTML=
+        "toi ten la "+nguoi.firstname +" "+ nguoi.lastname+" "+"quoc tich "+nguoi.country +"," +"hien tai toi  " +nguoi.age +"tuoi";
+    </script>
+    </body>
+</html>
+#########################
+<html>
+    <body>
+        <h1>this trong object</h1>
+        <p id="demo"></p>
+    <script>
+        const toi={
+            ten:"Thanh Long",
+            tuoi:"23",
+            gioi_tinh:"nam",
+            quoc_tich:"viet nam",
+            thonh_tin : function(){
+                return this.ten + this.tuoi;}
+            
+        }
+    document.getElementById("demo").innerHTML=toi.thonh_tin();
+    </script>
+    </body>
+</html>
+#########################
+
+<html>
+    <body>
+        <h1>truy cap mot doi tuong</h1>
+        <p>voi cac phuogn thuc...khong co dau ngoac don se tra ve dinh nghĩa hàm</p>
+        <p id="demoo"></p>
+    <script>
+        //tạo một đối tượng
+        const school ={
+            name:"THCS Huynh Thuc Khang",
+            address:"thon 2 Tam Hoa",
+            infomation: function(){
+                return this.name+" doi dien quan cf sang cho"+ this.address;
+            }
+        }
+        document.getElementById("demoo").innerHTML= school.infomation();
+    </script>
+    </body>
+</html>
+######################### <H2>event JV</H2>
+<html>
+    <body>
+        <h1>JavaScript HTML Event</h1>
+        <h2>the onclick attribute</h2>
+        <button onclick="document.getElementById('demo5').innerHTML=Date()">the time is</button>
+        <p id="demo5"></p>
+    </body>
+</html>
+#########################
+
